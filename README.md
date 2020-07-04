@@ -4,14 +4,14 @@ Smooth Scrollbar for Vue.js projects. Based on [@idiotwu's smooth-scrollbar](htt
 ### 1. Install dependency
 
 ```
-npm install --save vue-smooth-scrollbar
+npm install --save smooth-scrollbar-vue
 ```
 ### 2. Import component into main.js
 ```
 // src/main.js
 import Vue from 'vue'
 ...
-import SmoothScrollbar from 'vue-smooth-scrollbar'
+import SmoothScrollbar from 'smooth-scrollbar-vue'
 Vue.use(SmoothScrollbar)
 ...
 ```

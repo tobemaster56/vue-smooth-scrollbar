@@ -1,6 +1,6 @@
 {
-  "name": "@omini/smooth-scrollbar",
-  "version": "0.1.0",
+  "name": "smooth-scrollbar-vue",
+  "version": "0.1.1",
   "description": "Smooth scrollbar for Vue.js projects",
   "main": "src/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "smooth",
     "scrollbar"
   ],
-  "author": "Vladislav Gritsenko",
+  "author": "tobemaster56",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tobemaster56/vue-smooth-scrollbar/issues"
