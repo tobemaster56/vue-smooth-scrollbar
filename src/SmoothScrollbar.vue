@@ -6,17 +6,21 @@
 
 <script>
   import SmoothScrollbar from 'smooth-scrollbar'
-  import options from './options'
-
-  let scrollbar
-
   export default {
     name: 'smooth-scrollbar',
     props: {
       defaultOptions: {
         type: Object,
         required: false,
-        default: () => options
+        default: () => ({
+            damping: 0.1,
+            thumbMinSize: 20,
+            renderByPixels: true,
+            alwaysShowTracks: false,
+            continuousScrolling: true,
+            delegateTo: null,
+            plugins: {}
+        })
       },
       globalOptions: {
         type: Object,
@@ -35,16 +39,14 @@
       }
     },
     mounted() {
-      scrollbar = SmoothScrollbar.init(
+        this.scrollbar = SmoothScrollbar.init(
         this.$refs.scrollArea,
         Object.assign({}, this.defaultOptions, this.globalOptions, this.options)
       )
 
-      this.scrollbar = scrollbar
     },
     destroyed() {
-      scrollbar.destroy()
-      scrollbar = null
+      this.scrollbar.destroy()
       this.scrollbar = null
     }
   }

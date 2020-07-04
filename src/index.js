@@ -1,9 +1,3 @@
-/*
-* Vue-Smooth-Scrollbar index.js
-* Author: vladislav@magisters.org
-* Github: https://github.com/magisters-org/vue-smooth-scrollbar
-*/
-
 import Scrollbar from 'smooth-scrollbar'
 import SmoothScrollbar from './SmoothScrollbar.vue'
 
